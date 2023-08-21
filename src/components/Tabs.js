@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Tabs = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState(tabs[0].key);
+  // Check if tabs is defined and has at least one element
+  const initialTabKey = tabs && tabs.length > 0 ? tabs[0].key : null;
+  const [activeTab, setActiveTab] = useState(initialTabKey);
+
+  // Return null or an empty fragment if tabs is undefined or empty
+  if (!tabs || tabs.length === 0) return null;
 
   return (
     <div>
@@ -9,7 +14,9 @@ const Tabs = ({ tabs }) => {
         {tabs.map((tab) => (
           <button
             key={tab.key}
-            className={`py-2 px-4 ${activeTab === tab.key ? 'border-b-2 border-blue-600' : ''}`}
+            className={`py-2 px-4 ${
+              activeTab === tab.key ? "border-b-2 border-blue-600" : ""
+            }`}
             onClick={() => setActiveTab(tab.key)}
           >
             {tab.label}
