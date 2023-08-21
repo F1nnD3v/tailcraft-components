@@ -5,7 +5,7 @@ const Table = ({ headers, rows }) => {
     <table className="min-w-full bg-white border border-gray-200">
       <thead>
         <tr>
-          {headers.map((header, index) => (
+          {headers && headers.map((header, index) => (
             <th key={index} className="py-2 px-4 border-b">
               {header}
             </th>
@@ -13,7 +13,7 @@ const Table = ({ headers, rows }) => {
         </tr>
       </thead>
       <tbody>
-        {rows.map((row, rowIndex) => (
+        {rows && rows.map((row, rowIndex) => (
           <tr key={rowIndex}>
             {row.map((cell, cellIndex) => (
               <td key={cellIndex} className="py-2 px-4 border-b">
