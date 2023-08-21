@@ -6,7 +6,7 @@ const Button = ({
   size = "medium",
   loading = false,
   children,
-  text = "Edit me!",
+  text,
   ...props
 }) => {
   const baseClasses =
@@ -22,14 +22,14 @@ const Button = ({
     medium: "text-md px-4 py-2",
     large: "text-lg px-5 py-3",
   };
-
+  
   const loadingClasses = loading ? "opacity-50 cursor-not-allowed" : "";
 
   const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${loadingClasses}`;
 
   return (
-    <button className={classes} loading={loading} {...props}>
-      {loading ? <Loading /> : children} {text}
+    <button className={classes} {...props}>
+      {loading ? <Loading /> : children}
     </button>
   );
 };
