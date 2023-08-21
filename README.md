@@ -16,21 +16,21 @@ TailCraft Components offers a set of elegant, reusable React components, designe
 
 Install TailCraft Components via npm:
 
-\`\`\`bash
+```bash
 npm install tailcraft-components
-\`\`\`
+```
 
 ## Usage
 
 Here's how to use a Button component from TailCraft:
 
-\`\`\`jsx
+```jsx
 import { Button } from 'tailcraft-components';
 
 function MyApp() {
   return <Button variant="primary">Click Me!</Button>;
 }
-\`\`\`
+```
 
 ## Documentation
 
