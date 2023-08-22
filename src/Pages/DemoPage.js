@@ -16,6 +16,7 @@ import {
   Table,
   Textarea,
   Tooltip,
+  Switch,
   Tabs,
 } from "../utils/component_exporter";
 
@@ -154,6 +155,11 @@ function DemoPage() {
           >
             This is a demo modal. You can close it by clicking the "X" button.
           </Modal>
+        </section>
+        {/* Switch Component */}
+        <section id="modal" className="p-4 bg-white rounded shadow">
+          <h2 className="text-xl font-semibold mb-2">Switch</h2>
+          <Switch/>
         </section>
       </div>
     </div>
