@@ -15,4 +15,3 @@ const Switch = ({textEnabled = "I'm enabled", textDisabled = "I'm disabled", ena
                 }
             </div>)
 }
-export default Switch
