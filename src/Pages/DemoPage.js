@@ -90,7 +90,7 @@ function DemoPage() {
         {/* Dropdown Component */}
         <section id="dropdown" className="p-4 bg-white rounded shadow">
           <h2 className="text-xl font-semibold mb-2">Dropdown</h2>
-          <Dropdown options={["Option 1", "Option 2", "Option 3"]} />
+          <Dropdown label={"a"} options={["Option 1", "Option 2", "Option 3"]}/>
         </section>
 
         {/* Input Component */}

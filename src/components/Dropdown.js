@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Dropdown = ({ label, options = [], onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,7 +6,9 @@ const Dropdown = ({ label, options = [], onChange }) => {
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
-    onChange(option);
+    if (onChange !== null && typeof onChange === 'function') {
+      onChange(option);
+    }
     setIsOpen(false);
   };
 
