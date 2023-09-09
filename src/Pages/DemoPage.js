@@ -34,7 +34,14 @@ function DemoPage() {
         {/* Button Component */}
         <section id="button" className="p-4 bg-white rounded shadow">
           <h2 className="text-xl font-semibold mb-2">Button</h2>
-          <Button onClick={() => alert("Button Clicked!")}>Click Me</Button>
+          <Button
+            onClick={() =>{
+              alert("working!")
+              console.log("Working!")
+            }}
+          >
+            Click Me
+          </Button>
           {/* ... other variations */}
         </section>
 
@@ -90,7 +97,10 @@ function DemoPage() {
         {/* Dropdown Component */}
         <section id="dropdown" className="p-4 bg-white rounded shadow">
           <h2 className="text-xl font-semibold mb-2">Dropdown</h2>
-          <Dropdown label={"a"} options={["Option 1", "Option 2", "Option 3"]}/>
+          <Dropdown
+            label={"a"}
+            options={["Option 1", "Option 2", "Option 3"]}
+          />
         </section>
 
         {/* Input Component */}
@@ -159,7 +169,7 @@ function DemoPage() {
         {/* Switch Component */}
         <section id="modal" className="p-4 bg-white rounded shadow">
           <h2 className="text-xl font-semibold mb-2">Switch</h2>
-          <Switch/>
+          <Switch />
         </section>
       </div>
     </div>
