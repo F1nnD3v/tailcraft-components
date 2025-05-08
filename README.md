@@ -1,4 +1,4 @@
-
+<!-- GitAds-Verify: XAQ9ZOBWJY5JLND52M7E9VWVL332Y685 -->
 # TailCraft Components
 
 TailCraft Components is a comprehensive library of elegant, reusable React components, designed with Tailwind CSS. Perfect for rapid UI development, it offers a seamless blend of style and functionality to enhance your creative process.
